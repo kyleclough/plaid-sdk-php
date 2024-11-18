@@ -1,6 +1,6 @@
 <?php
 
-namespace TomorrowIdeas\Plaid\Entities;
+namespace KyleClough\Plaid\Entities;
 
 class AccountHolder
 {

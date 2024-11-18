@@ -1,6 +1,6 @@
 <?php
 
-namespace TomorrowIdeas\Plaid;
+namespace KyleClough\Plaid;
 
 use Exception;
 

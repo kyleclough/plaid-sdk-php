@@ -1,22 +1,22 @@
 <?php
 
-namespace TomorrowIdeas\Plaid\Tests;
+namespace KyleClough\Plaid\Tests;
 
 use Capsule\Request;
 use Capsule\Response;
 use Capsule\ResponseStatus;
 use Shuttle\Handler\MockHandler;
 use Shuttle\Shuttle;
-use TomorrowIdeas\Plaid\Plaid;
-use TomorrowIdeas\Plaid\PlaidRequestException;
+use KyleClough\Plaid\Plaid;
+use KyleClough\Plaid\PlaidRequestException;
 use UnexpectedValueException;
 
 /**
- * @covers TomorrowIdeas\Plaid\Plaid
- * @covers TomorrowIdeas\Plaid\Resources\AbstractResource
- * @covers TomorrowIdeas\Plaid\Resources\Items
- * @covers TomorrowIdeas\Plaid\PlaidRequestException
- * @uses TomorrowIdeas\Plaid\PlaidException
+ * @covers KyleClough\Plaid\Plaid
+ * @covers KyleClough\Plaid\Resources\AbstractResource
+ * @covers KyleClough\Plaid\Resources\Items
+ * @covers KyleClough\Plaid\PlaidRequestException
+ * @uses KyleClough\Plaid\PlaidException
  */
 class AbstractResourceTest extends TestCase
 {

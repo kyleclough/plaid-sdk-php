@@ -1,13 +1,13 @@
 <?php
 
-namespace TomorrowIdeas\Plaid\Tests;
+namespace KyleClough\Plaid\Tests;
 
 use DateTime;
 
 /**
- * @covers TomorrowIdeas\Plaid\Plaid
- * @covers TomorrowIdeas\Plaid\Resources\AbstractResource
- * @covers TomorrowIdeas\Plaid\Resources\Investments
+ * @covers KyleClough\Plaid\Plaid
+ * @covers KyleClough\Plaid\Resources\AbstractResource
+ * @covers KyleClough\Plaid\Resources\Investments
  */
 class InvestmentsTest extends TestCase
 {

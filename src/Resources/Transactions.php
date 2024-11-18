@@ -1,9 +1,9 @@
 <?php
 
-namespace TomorrowIdeas\Plaid\Resources;
+namespace KyleClough\Plaid\Resources;
 
 use DateTime;
-use TomorrowIdeas\Plaid\PlaidRequestException;
+use KyleClough\Plaid\PlaidRequestException;
 
 class Transactions extends AbstractResource
 {

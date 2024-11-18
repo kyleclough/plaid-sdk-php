@@ -1,9 +1,9 @@
 # Plaid SDK
 
 [![Latest Stable Version](https://img.shields.io/packagist/v/tomorrow-ideas/plaid-sdk-php.svg?style=flat-square)](https://packagist.org/packages/tomorrow-ideas/plaid-sdk-php)
-[![Build Status](https://img.shields.io/travis/TomorrowIdeas/plaid-sdk-php.svg?style=flat-square)](https://travis-ci.com/TomorrowIdeas/plaid-sdk-php)
-[![Code Coverage](https://img.shields.io/coveralls/github/TomorrowIdeas/plaid-sdk-php.svg?style=flat-square)](https://coveralls.io/github/TomorrowIdeas/plaid-sdk-php)
-[![License](https://img.shields.io/github/license/TomorrowIdeas/plaid-sdk-php.svg?style=flat-square)](https://packagist.org/packages/tomorrow-ideas/plaid-sdk-php)
+[![Build Status](https://img.shields.io/travis/KyleClough/plaid-sdk-php.svg?style=flat-square)](https://travis-ci.com/KyleClough/plaid-sdk-php)
+[![Code Coverage](https://img.shields.io/coveralls/github/KyleClough/plaid-sdk-php.svg?style=flat-square)](https://coveralls.io/github/KyleClough/plaid-sdk-php)
+[![License](https://img.shields.io/github/license/KyleClough/plaid-sdk-php.svg?style=flat-square)](https://packagist.org/packages/tomorrow-ideas/plaid-sdk-php)
 
 Plaid PHP SDK supporting:
 * Link tokens
@@ -44,7 +44,7 @@ composer require tomorrow-ideas/plaid-sdk-php
 Instantiate the Plaid client class with your credentials.
 
 ```php
-$client = new \TomorrowIdeas\Plaid\Plaid("your-client-id", "your-secret", "environment");
+$client = new \KyleClough\Plaid\Plaid("your-client-id", "your-secret", "environment");
 ```
 
 ### Environments
@@ -70,7 +70,7 @@ $options = [
 
 ## Example
 ```php
-use TomorrowIdeas\Plaid\Plaid;
+use KyleClough\Plaid\Plaid;
 
 require __DIR__ . "/vendor/autoload.php";
 
@@ -396,7 +396,7 @@ $response = $plaid->sandbox->fireWebhook($access_token);
 
 ### User
 
-The `TomorrowIdeas\Plaid\Entities\User` entity is used to represent your end user when creating a new link token.
+The `KyleClough\Plaid\Entities\User` entity is used to represent your end user when creating a new link token.
 
 Example:
 
@@ -414,23 +414,23 @@ $token_user = new User(
 
 ### RecipientAddress
 
-The `TomorrowIdeas\Plaid\Entities\RecipientAddress` entity is used to represent an address object for the recipient of a payment request.
+The `KyleClough\Plaid\Entities\RecipientAddress` entity is used to represent an address object for the recipient of a payment request.
 
 Example:
 
 ```php
-$address = new TomorrowIdeas\Plaid\Entities\RecipientAddress("123 Elm St.", "Apt 1", "Anytown", "ABC 123", "GB");
+$address = new KyleClough\Plaid\Entities\RecipientAddress("123 Elm St.", "Apt 1", "Anytown", "ABC 123", "GB");
 ```
 
 ### PaymentSchedule
 
 Example:
 
-The `TomorrowIdeas\Plaid\Entities\PaymnentSchedule` entity is used when creating a new payment that will be a recurring charge.
+The `KyleClough\Plaid\Entities\PaymnentSchedule` entity is used when creating a new payment that will be a recurring charge.
 See `createPayment` method for more information.
 
 ```php
-$payment_schedule = new TomorrowIdeas\Plaid\Entities\PaymnentSchedule(
+$payment_schedule = new KyleClough\Plaid\Entities\PaymnentSchedule(
     PaymentSchedule::INTERVAL_MONTHLY,
     15,
     new DateTime("2020-10-01")

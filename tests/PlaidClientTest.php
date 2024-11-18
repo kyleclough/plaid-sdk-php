@@ -1,16 +1,16 @@
 <?php
 
-namespace TomorrowIdeas\Plaid\Tests;
+namespace KyleClough\Plaid\Tests;
 
 use ReflectionClass;
 use Shuttle\Shuttle;
-use TomorrowIdeas\Plaid\Plaid;
+use KyleClough\Plaid\Plaid;
 use UnexpectedValueException;
 
 /**
- * @covers TomorrowIdeas\Plaid\Plaid
- * @covers TomorrowIdeas\Plaid\Resources\AbstractResource
- * @covers TomorrowIdeas\Plaid\Resources\Items
+ * @covers KyleClough\Plaid\Plaid
+ * @covers KyleClough\Plaid\Resources\AbstractResource
+ * @covers KyleClough\Plaid\Resources\Items
  */
 class PlaidClientTest extends TestCase
 {

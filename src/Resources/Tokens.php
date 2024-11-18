@@ -1,10 +1,10 @@
 <?php
 
-namespace TomorrowIdeas\Plaid\Resources;
+namespace KyleClough\Plaid\Resources;
 
-use TomorrowIdeas\Plaid\Entities\User;
-use TomorrowIdeas\Plaid\PlaidRequestException;
-use TomorrowIdeas\Plaid\Entities\AccountFilters;
+use KyleClough\Plaid\Entities\User;
+use KyleClough\Plaid\PlaidRequestException;
+use KyleClough\Plaid\Entities\AccountFilters;
 
 class Tokens extends AbstractResource
 {
@@ -34,6 +34,7 @@ class Tokens extends AbstractResource
 		array $country_codes,
 		User $user,
 		array $products = [],
+		?array $optionalProducts = [],
 		?string $webhook = null,
 		?string $link_customization_name = null,
 		?AccountFilters $account_filters = null,
@@ -49,8 +50,12 @@ class Tokens extends AbstractResource
 			"language" => $language,
 			"country_codes" => $country_codes,
 			"user" => $user->toArray(),
-			"products" => $products
+			"products" => $products,
 		];
+
+		if ( $optionalProducts ) {
+			$params['optional_products'] = $optionalProducts;
+		}
 
 		if( $webhook ){
 			$params["webhook"] = $webhook;

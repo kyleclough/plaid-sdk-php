@@ -1,9 +1,9 @@
 <?php
 
-namespace TomorrowIdeas\Plaid\Resources;
+namespace KyleClough\Plaid\Resources;
 
 use Psr\Http\Message\ResponseInterface;
-use TomorrowIdeas\Plaid\PlaidRequestException;
+use KyleClough\Plaid\PlaidRequestException;
 
 class Reports extends AbstractResource
 {

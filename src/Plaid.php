@@ -1,29 +1,29 @@
 <?php
 
-namespace TomorrowIdeas\Plaid;
+namespace KyleClough\Plaid;
 
 use Psr\Http\Client\ClientInterface;
 use ReflectionClass;
 use Shuttle\Shuttle;
-use TomorrowIdeas\Plaid\Resources\AbstractResource;
+use KyleClough\Plaid\Resources\AbstractResource;
 use UnexpectedValueException;
 
 /**
- * @property \TomorrowIdeas\Plaid\Resources\Accounts $accounts
- * @property \TomorrowIdeas\Plaid\Resources\Auth $auth
- * @property \TomorrowIdeas\Plaid\Resources\BankTransfers $bank_transfers
- * @property \TomorrowIdeas\Plaid\Resources\Categories $categories
- * @property \TomorrowIdeas\Plaid\Resources\Institutions $institutions
- * @property \TomorrowIdeas\Plaid\Resources\Investments	$investments
- * @property \TomorrowIdeas\Plaid\Resources\Items $items
- * @property \TomorrowIdeas\Plaid\Resources\Liabilities $liabilities
- * @property \TomorrowIdeas\Plaid\Resources\Tokens $tokens
- * @property \TomorrowIdeas\Plaid\Resources\Payments $payments
- * @property \TomorrowIdeas\Plaid\Resources\Processors $processors
- * @property \TomorrowIdeas\Plaid\Resources\Reports $reports
- * @property \TomorrowIdeas\Plaid\Resources\Sandbox $sandbox
- * @property \TomorrowIdeas\Plaid\Resources\Transactions $transactions
- * @property \TomorrowIdeas\Plaid\Resources\Webhooks $webhooks
+ * @property \KyleClough\Plaid\Resources\Accounts $accounts
+ * @property \KyleClough\Plaid\Resources\Auth $auth
+ * @property \KyleClough\Plaid\Resources\BankTransfers $bank_transfers
+ * @property \KyleClough\Plaid\Resources\Categories $categories
+ * @property \KyleClough\Plaid\Resources\Institutions $institutions
+ * @property \KyleClough\Plaid\Resources\Investments	$investments
+ * @property \KyleClough\Plaid\Resources\Items $items
+ * @property \KyleClough\Plaid\Resources\Liabilities $liabilities
+ * @property \KyleClough\Plaid\Resources\Tokens $tokens
+ * @property \KyleClough\Plaid\Resources\Payments $payments
+ * @property \KyleClough\Plaid\Resources\Processors $processors
+ * @property \KyleClough\Plaid\Resources\Reports $reports
+ * @property \KyleClough\Plaid\Resources\Sandbox $sandbox
+ * @property \KyleClough\Plaid\Resources\Transactions $transactions
+ * @property \KyleClough\Plaid\Resources\Webhooks $webhooks
  */
 class Plaid
 {
@@ -108,7 +108,7 @@ class Plaid
 
 			$resource = \str_replace([" "], "", \ucwords(\str_replace(["_"], " ", $resource)));
 
-			$resource_class = "\\TomorrowIdeas\\Plaid\\Resources\\" . $resource;
+			$resource_class = "\\KyleClough\\Plaid\\Resources\\" . $resource;
 
 			if( !\class_exists($resource_class) ){
 				throw new UnexpectedValueException("Unknown Plaid resource: {$resource}");

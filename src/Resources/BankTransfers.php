@@ -1,10 +1,10 @@
 <?php
 
-namespace TomorrowIdeas\Plaid\Resources;
+namespace KyleClough\Plaid\Resources;
 
 use DateTime;
-use TomorrowIdeas\Plaid\Entities\AccountHolder;
-use TomorrowIdeas\Plaid\PlaidRequestException;
+use KyleClough\Plaid\Entities\AccountHolder;
+use KyleClough\Plaid\PlaidRequestException;
 
 class BankTransfers extends AbstractResource
 {

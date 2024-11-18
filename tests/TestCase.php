@@ -1,13 +1,13 @@
 <?php
 
-namespace TomorrowIdeas\Plaid\Tests;
+namespace KyleClough\Plaid\Tests;
 
 use Capsule\Request;
 use Capsule\Response;
 use PHPUnit\Framework\TestCase as PHPUnitTestCase;
 use Shuttle\Handler\MockHandler;
 use Shuttle\Shuttle;
-use TomorrowIdeas\Plaid\Plaid;
+use KyleClough\Plaid\Plaid;
 
 abstract class TestCase extends PHPUnitTestCase
 {

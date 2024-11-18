@@ -1,8 +1,8 @@
 <?php
 
-namespace TomorrowIdeas\Plaid\Resources;
+namespace KyleClough\Plaid\Resources;
 
-use TomorrowIdeas\Plaid\PlaidRequestException;
+use KyleClough\Plaid\PlaidRequestException;
 
 class Accounts extends AbstractResource
 {

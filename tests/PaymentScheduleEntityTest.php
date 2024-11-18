@@ -1,13 +1,13 @@
 <?php
 
-namespace TomorrowIdeas\Plaid\Tests;
+namespace KyleClough\Plaid\Tests;
 
 use DateTime;
 use InvalidArgumentException;
-use TomorrowIdeas\Plaid\Entities\PaymentSchedule;
+use KyleClough\Plaid\Entities\PaymentSchedule;
 
 /**
- * @covers TomorrowIdeas\Plaid\Entities\PaymentSchedule
+ * @covers KyleClough\Plaid\Entities\PaymentSchedule
  */
 class PaymentScheduleEntityTest extends TestCase
 {

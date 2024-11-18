@@ -1,6 +1,6 @@
 {
-    "name": "tomorrow-ideas/plaid-sdk-php",
-    "description": "PHP implementation of Plaid's API as an SDK.",
+    "name": "kyleclough/plaid-sdk-php",
+    "description": "PHP implementation of Plaid's AP as an SDK.",
     "keywords": [
         "plaid",
         "sdk",
@@ -8,14 +8,14 @@
     ],
     "type": "library",
     "require": {
-        "php": ">=7.3|>=8.0",
+        "php": ">=7.3 || >=8.0",
         "ext-json": "*",
         "ext-curl": "*",
         "nimbly/shuttle": "^0.4"
     },
     "autoload": {
         "psr-4": {
-            "TomorrowIdeas\\Plaid\\" : "src"
+            "KyleClough\\Plaid\\" : "src"
         }
     },
     "require-dev": {
@@ -26,14 +26,14 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "TomorrowIdeas\\Plaid\\Tests\\": "tests"
+            "KyleClough\\Plaid\\Tests\\": "tests"
         }
     },
     "license": "MIT",
     "authors": [
         {
-            "name": "Brent Scheffler",
-            "email": "brent@brentscheffler.com"
+            "name": "Kyle Clough",
+            "email": "kyle@kyleclough.com"
         }
     ]
 }

@@ -1,15 +1,15 @@
 <?php
 
-namespace TomorrowIdeas\Plaid\Tests;
+namespace KyleClough\Plaid\Tests;
 
 use DateTime;
-use TomorrowIdeas\Plaid\Entities\AccountHolder;
+use KyleClough\Plaid\Entities\AccountHolder;
 
 /**
- * @covers TomorrowIdeas\Plaid\Plaid
- * @covers TomorrowIdeas\Plaid\Resources\AbstractResource
- * @covers TomorrowIdeas\Plaid\Resources\BankTransfers
- * @covers TomorrowIdeas\Plaid\Entities\AccountHolder
+ * @covers KyleClough\Plaid\Plaid
+ * @covers KyleClough\Plaid\Resources\AbstractResource
+ * @covers KyleClough\Plaid\Resources\BankTransfers
+ * @covers KyleClough\Plaid\Entities\AccountHolder
  */
 class BankTransfersTest extends TestCase
 {

@@ -1,18 +1,18 @@
 <?php
 
-namespace TomorrowIdeas\Plaid\Tests;
+namespace KyleClough\Plaid\Tests;
 
 use Capsule\Response;
 use Shuttle\Handler\MockHandler;
 use Shuttle\Shuttle;
-use TomorrowIdeas\Plaid\Plaid;
-use TomorrowIdeas\Plaid\PlaidRequestException;
+use KyleClough\Plaid\Plaid;
+use KyleClough\Plaid\PlaidRequestException;
 
 /**
- * @covers TomorrowIdeas\Plaid\Plaid
- * @covers TomorrowIdeas\Plaid\Resources\AbstractResource
- * @covers TomorrowIdeas\Plaid\Resources\Reports
- * @covers TomorrowIdeas\Plaid\PlaidRequestException
+ * @covers KyleClough\Plaid\Plaid
+ * @covers KyleClough\Plaid\Resources\AbstractResource
+ * @covers KyleClough\Plaid\Resources\Reports
+ * @covers KyleClough\Plaid\PlaidRequestException
  */
 class ReportsTest extends TestCase
 {
